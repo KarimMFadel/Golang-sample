@@ -1,0 +1,10 @@
+
+Hi,
+
+{{range .}}
+    Name {{.Name}}
+    Time before formatting : {{.Birthdate}}
+    Time After formatting : {{calculatedDate .Birthdate}}
+    Html tags : {{ .Test}}
+    Html tags with hyphen: {{- .Test}}
+{{end}}

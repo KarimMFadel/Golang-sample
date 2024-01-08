@@ -1,0 +1,17 @@
+<div>
+Hi,
+
+{{range .Users}}
+    {{ if ne .Name ""}}
+        test test test 
+    {{else if eq .Name ""}}
+        Karim Mostafa Mohamed
+    {{ end }}
+    Name {{.Name}}
+    Time before formatting : {{.Birthdate}}
+    Time After formatting : {{calculatedDate .Birthdate}}
+    Html tags : {{ .Test}}
+    Html tags with hyphen: {{- .Test}}
+{{end}}
+
+<div>
